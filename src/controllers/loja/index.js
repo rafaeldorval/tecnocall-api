@@ -6,7 +6,7 @@ const findAll = require('./services/findAll')
 
 const authMid = require('../../middleware/auth')
 
-router.get('/', authMid, findAll)
+router.get('/', findAll)
 router.post('/', authMid, create)
 
 module.exports = router

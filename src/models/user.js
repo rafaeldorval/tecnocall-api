@@ -13,9 +13,13 @@ const User = mongoose.Schema({
     type: String,
     index: true,
   },
-  password: {
+  cellnumber: {
     type: String,
     index: true,
+  },
+  loja_id: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Loja'
   },
   role_id: {
     type: mongoose.Schema.Types.ObjectId,
@@ -25,6 +29,10 @@ const User = mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId,
     ref: 'Sector'
   },
+  isCentral: {
+    type: Boolean,
+    default: false
+  }
 }, {
   timestamps: true
 })

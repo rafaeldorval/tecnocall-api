@@ -8,6 +8,7 @@ const Sector = mongoose.Schema({
   name: {
     type: String,
     index: true,
+    uppercase: true
   },
 }, {
   timestamps: true
