@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const User = mongoose.Schema({
+const Contact = mongoose.Schema({
   description: {
     type: String,
     index: true,
@@ -30,4 +30,4 @@ const User = mongoose.Schema({
   timestamps: true
 })
 
-module.exports = mongoose.model('User', User)
+module.exports = mongoose.model('Contact', Contact)

@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const Sector = mongoose.Schema({
+const Loja = mongoose.Schema({
   cod: {
     type: String,
     index: true,
@@ -14,4 +14,4 @@ const Sector = mongoose.Schema({
   timestamps: true
 })
 
-module.exports = mongoose.model('Sector', Sector)
+module.exports = mongoose.model('Loja', Loja)

@@ -21,13 +21,14 @@ const User = mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId,
     ref: 'Loja'
   },
-  role_id: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'Role'
-  },
   sector_id: {
     type: mongoose.Schema.Types.ObjectId,
     ref: 'Sector'
+  },
+  role: {
+    type: String,
+    enum: ['ADMIN', 'USER'],
+    default: 'USER'
   },
   isCentral: {
     type: Boolean,
